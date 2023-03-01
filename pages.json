@@ -37,25 +37,22 @@
 				"enablePullDownRefresh": false
 			}
 
-		}    ,{
-                    "path" : "goods_list/goods_list",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-                ,{
-                    "path" : "search/search",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-            ]
+		}, {
+			"path": "goods_list/goods_list",
+			"style": {
+				"onReachBottomDistance": 150,
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "search/search",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}]
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
