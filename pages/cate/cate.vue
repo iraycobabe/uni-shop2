@@ -35,6 +35,8 @@
 </template>
 
 <script>
+	// 导入自己封装的 mixin 模块
+	import badgeMix from '@/mixins/tabbar-badge.js'
 	export default {
 		data() {
 			return {
@@ -58,6 +60,8 @@
 			// 调用获取分类列表数据的方法
 			this.getCateList()
 		},
+		// 将 badgeMix 混入到当前的页面中进行使用
+		mixins: [badgeMix],
 		methods: {
 			async getCateList() {
 				// 发起请求
